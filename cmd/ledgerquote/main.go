@@ -20,7 +20,7 @@ func main() {
 	fromIn := argSet.String("from", "", "Date range start (inclusive)")
 	toIn := argSet.String("to", "", "Date range end (inclusive)")
 	configIn := argSet.String("config", "", "Config file to use")
-	overwrite := argSet.Bool("overwrite", true, "Overwrite existing prices")
+	overwrite := argSet.Bool("nooverwrite", false, "Don't overwrite existing prices")
 
 	// Check inputs and parse them
 	if len(os.Args) < 2 {
